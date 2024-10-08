@@ -11,7 +11,17 @@ const songSchema = new mongoose.Schema(
     album: { type: String, required: false, trim: true },
     category: {
       type: String,
-      enum: ['pop', 'rock', 'rap', 'hiphop', 'classic'],
+      enum: [
+        'pop',
+        'rock',
+        'rap',
+        'hiphop',
+        'classic',
+        'urbano',
+        'cumbia',
+        'reggaetón',
+        'trap'
+      ],
       required: false
     },
     video: { type: String, required: false, trim: true },
